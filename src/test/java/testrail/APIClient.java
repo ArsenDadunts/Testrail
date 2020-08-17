@@ -23,9 +23,11 @@ import java.net.MalformedURLException;
 import java.util.Base64;
 
 import static io.restassured.RestAssured.given;
+import static org.testng.Assert.assertEquals;
+import static testrail.utils.Utils_Constants.convertToObject;
 
 
-public class APIClient{
+public class APIClient {
     private String m_user;
     private String m_password;
     private String m_url;
@@ -55,22 +57,22 @@ public class APIClient{
         this.m_password = password;
     }
 
-    public Object sendGet(String uri, String data)
+    public Object sendGet(String uri, String data, int statusCode)
             throws MalformedURLException, IOException, APIException {
-        return this.sendRequest("GET", uri, data);
+        return this.sendRequest("GET", uri, data, statusCode);
     }
 
-    public Object sendGet(String uri)
+    public Object sendGet(String uri, int statusCode)
             throws MalformedURLException, IOException, APIException {
-        return this.sendRequest("GET", uri, null);
+        return this.sendRequest("GET", uri, null, statusCode);
     }
 
-    public Object sendPost(String uri, Object data)
+    public Object sendPost(String uri, Object data, int statusCode)
             throws MalformedURLException, IOException, APIException {
-        return this.sendRequest("POST", uri, data);
+        return this.sendRequest("POST", uri, data, statusCode);
     }
 
-    private Object sendRequest(String method, String url, Object data)
+    private Object sendRequest(String method, String url, Object data, int statusCode)
             throws MalformedURLException, IOException, APIException {
         if (method.equals("POST")) {
             if (data != null) {
@@ -81,34 +83,42 @@ public class APIClient{
                     File uploadFile = new File((String) data);
                     response = given().log().method().log().uri().log().headers().log().body()
                             .header("Authorization", "Basic " + getAuthorization(this.m_user, this.m_password))
-                            .header("Content-Type","multipart/form-data; boundary=" + boundary)
+                            .header("Content-Type", "multipart/form-data; boundary=" + boundary)
                             .spec(specBuilder.build())
                             .multiPart(uploadFile)
                             .post(this.m_url + url);
                     response.prettyPrint();
-                }else {
+                    assertEquals(response.statusCode(), statusCode);
+                    return convertToObject(response);
+                } else {
                     Object res = new Gson().toJson(data);
                     response = given().log().method().log().uri().log().headers().log().body()
                             .header("Authorization", "Basic " + getAuthorization(this.m_user, this.m_password))
-                            .header("Content-Type","application/json")
+                            .header("Content-Type", "application/json")
                             .body(res)
                             .post(this.m_url + url);
                     response.prettyPrint();
+                    assertEquals(response.statusCode(), statusCode);
+                    return convertToObject(response);
                 }
-            }else {
+            } else {
                 response = given().log().method().log().uri().log().headers().log().body()
                         .header("Authorization", "Basic " + getAuthorization(this.m_user, this.m_password))
-                        .header("Content-Type","application/json")
+                        .header("Content-Type", "application/json")
                         .post(this.m_url + url);
                 response.getBody().prettyPrint();
                 response.prettyPrint();
+                assertEquals(response.statusCode(), statusCode);
+                return convertToObject(response);
             }
         } else if (method.equals("GET")) {
             response = given().log().method().log().uri().log().headers().log().body()
                     .header("Authorization", "Basic " + getAuthorization(this.m_user, this.m_password))
-                    .header("Content-Type","application/json")
+                    .header("Content-Type", "application/json")
                     .get(this.m_url + url);
             response.prettyPrint();
+            assertEquals(response.statusCode(), statusCode);
+            return convertToObject(response);
         }
 
         int status = response.statusCode();

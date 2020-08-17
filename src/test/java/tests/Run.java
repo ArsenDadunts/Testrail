@@ -4,9 +4,12 @@ import com.google.gson.JsonObject;
 import org.testng.annotations.Test;
 import testrail.executors.Case;
 import testrail.payloads.RunPayload;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
+import static testrail.utils.Utils_Constants.*;
 
 public class Run {
     testrail.executors.Run authentication = new testrail.executors.Run();
@@ -15,12 +18,12 @@ public class Run {
 
     @Test()
     public void getRun() {
-        authentication.get_run("2");
+        authentication.get_run("2", OK);
     }
 
     @Test()
     public void getRuns() {
-        authentication.get_runs("1");
+        authentication.get_runs("1", OK);
     }
 
     @Test()
@@ -31,16 +34,16 @@ public class Run {
             caseIds.add(i);
         }
 
-        authentication.add_run( "1", payload.addRunData(caseIds));
+        authentication.add_run("1", payload.addRunData(caseIds), OK);
     }
 
     @Test()
     public void updateRun() {
-        authentication.update_run( "1", payload.updateRunData(1, "1m 30s"));
+        authentication.update_run("1", payload.updateRunData(1, "1m 30s"), OK);
     }
 
     @Test()
     public void deleteRun() {
-        authentication.delete_run("1");
+        authentication.delete_run("1", OK);
     }
 }

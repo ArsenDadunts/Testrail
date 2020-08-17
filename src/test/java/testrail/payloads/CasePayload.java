@@ -22,14 +22,14 @@ public class CasePayload extends JSONObject {
         return map;
     }
 
-    public Map updateCaseData(int priority_id, String estimate){
+    public Map updateCaseData(int priority_id, String estimate) {
         Map map = new HashMap();
         map.put("priority_id", priority_id);
         map.put("estimate", estimate);
         return map;
     }
 
-    public static Map createSteps(){
+    public static Map createSteps() {
         Map step1 = new HashMap();
         step1.put("status_id", new Integer(5));
         step1.put("content", "Step description 1");

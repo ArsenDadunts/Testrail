@@ -23,7 +23,7 @@ public class ResultPayload extends JSONObject {
         return map;
     }
 
-    public Map updateResultData(int priority_id, String estimate){
+    public Map updateResultData(int priority_id, String estimate) {
         Map map = new HashMap();
         map.put("priority_id", priority_id);
         map.put("estimate", estimate);

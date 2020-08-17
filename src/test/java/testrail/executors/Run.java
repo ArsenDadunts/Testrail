@@ -15,13 +15,13 @@ public class Run {
     public static final String TESTRAIL_PASSWORD = getProperty("TESTRAIL_PASSWORD");
     APIClient client;
 
-    public void add_run(String project_id, Map data) {
+    public void add_run(String project_id, Map data, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONObject request = null;
         try {
-            request = (JSONObject) client.sendPost("add_run/" + project_id, data);
+            request = (JSONObject) client.sendPost("add_run/" + project_id, data, statusCode);
             request.toJSONString();
         } catch (IOException e) {
             e.printStackTrace();
@@ -31,13 +31,13 @@ public class Run {
 
     }
 
-    public void update_run(String run_id, Map data) {
+    public void update_run(String run_id, Map data, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONObject request = null;
         try {
-            request = (JSONObject) client.sendPost("update_run/" + run_id, data);
+            request = (JSONObject) client.sendPost("update_run/" + run_id, data, statusCode);
             request.toJSONString();
         } catch (IOException e) {
             e.printStackTrace();
@@ -47,13 +47,13 @@ public class Run {
 
     }
 
-    public void delete_run(String run_id) {
+    public void delete_run(String run_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONObject request = null;
         try {
-            request = (JSONObject) client.sendGet("delete_run/" + run_id);
+            request = (JSONObject) client.sendGet("delete_run/" + run_id, statusCode);
             request.toJSONString();
         } catch (IOException e) {
             e.printStackTrace();
@@ -63,13 +63,13 @@ public class Run {
 
     }
 
-    public void get_run(String run_id) {
+    public void get_run(String run_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONObject request = null;
         try {
-            request = (JSONObject) client.sendGet("get_run/" + run_id);
+            request = (JSONObject) client.sendGet("get_run/" + run_id, statusCode);
             request.toJSONString();
         } catch (IOException e) {
             e.printStackTrace();
@@ -79,13 +79,13 @@ public class Run {
 
     }
 
-    public void get_runs(String project_id) {
+    public void get_runs(String project_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONObject request = null;
         try {
-            request = (JSONObject) client.sendGet("get_runs/" + project_id);
+            request = (JSONObject) client.sendGet("get_runs/" + project_id, statusCode);
             request.toJSONString();
         } catch (IOException e) {
             e.printStackTrace();

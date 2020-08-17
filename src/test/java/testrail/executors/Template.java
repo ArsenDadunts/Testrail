@@ -11,27 +11,26 @@ import java.util.Map;
 import static java.lang.System.getProperty;
 
 public class Template {
-    public static final String BASE_URL = getProperty("BASE_URL");
-    public static final String TESTRAIL_USERNAME = getProperty("TESTRAIL_USERNAME");
-    public static final String TESTRAIL_PASSWORD = getProperty("TESTRAIL_PASSWORD");
+    public static final String
+            BASE_URL = getProperty("BASE_URL"),
+            GET_TEMPLATES = getProperty("GET_TEMPLATES"),
+            TESTRAIL_USERNAME = getProperty("TESTRAIL_USERNAME"),
+            TESTRAIL_PASSWORD = getProperty("TESTRAIL_PASSWORD");
     APIClient client;
 
-    public void get_templates(String projectId) {
+    public Object get_templates(String project_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONArray request = null;
+        JSONObject response = null;
         try {
-            request = (JSONArray) client.sendGet("get_templates/" + projectId);
-            request.toJSONString();
+            response = (JSONObject) client.sendGet(GET_TEMPLATES + project_id, statusCode);
+            response.toJSONString();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (APIException e) {
             e.printStackTrace();
         }
-        for (Object object : request
-        ) {
-            System.out.println(object.toString());
-        }
+       return response;
     }
 }

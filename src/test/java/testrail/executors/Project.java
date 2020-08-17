@@ -15,13 +15,13 @@ public class Project {
     public static final String TESTRAIL_PASSWORD = getProperty("TESTRAIL_PASSWORD");
     APIClient client;
 
-    public void get_project(String project_id) {
+    public void get_project(String project_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONObject request = null;
         try {
-            request = (JSONObject) client.sendGet("get_project/" + project_id);
+            request = (JSONObject) client.sendGet("get_project/" + project_id, statusCode);
             request.toJSONString();
         } catch (IOException e) {
             e.printStackTrace();
@@ -31,13 +31,13 @@ public class Project {
 
     }
 
-    public void get_projects() {
+    public void get_projects(int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONObject request = null;
         try {
-            request = (JSONObject) client.sendGet("get_projects");
+            request = (JSONObject) client.sendGet("get_projects", statusCode);
             request.toJSONString();
         } catch (IOException e) {
             e.printStackTrace();
@@ -47,13 +47,13 @@ public class Project {
 
     }
 
-    public void add_project(Map data) {
+    public void add_project(Map data, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONObject request = null;
         try {
-            request = (JSONObject) client.sendPost("add_project", data);
+            request = (JSONObject) client.sendPost("add_project", data, statusCode);
             request.toJSONString();
         } catch (IOException e) {
             e.printStackTrace();
@@ -63,13 +63,13 @@ public class Project {
 
     }
 
-    public void update_project(String project_id, Map data) {
+    public void update_project(String project_id, Map data, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONObject request = null;
         try {
-            request = (JSONObject) client.sendPost("update_project/" + project_id, data);
+            request = (JSONObject) client.sendPost("update_project/" + project_id, data, statusCode);
             request.toJSONString();
         } catch (IOException e) {
             e.printStackTrace();
@@ -79,13 +79,13 @@ public class Project {
 
     }
 
-    public void delete_project(String project_id) {
+    public void delete_project(String project_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONObject request = null;
         try {
-            request = (JSONObject) client.sendPost("delete_project/" + project_id, null);
+            request = (JSONObject) client.sendPost("delete_project/" + project_id, null, statusCode);
             request.toJSONString();
         } catch (IOException e) {
             e.printStackTrace();

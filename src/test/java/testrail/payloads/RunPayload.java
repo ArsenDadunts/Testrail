@@ -25,7 +25,7 @@ public class RunPayload extends JSONObject {
         return map;
     }
 
-    public Map updateRunData(int priority_id, String estimate){
+    public Map updateRunData(int priority_id, String estimate) {
         Map map = new HashMap();
         map.put("priority_id", priority_id);
         map.put("estimate", estimate);
