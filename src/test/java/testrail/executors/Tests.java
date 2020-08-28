@@ -17,35 +17,23 @@ public class Tests {
             TESTRAIL_PASSWORD = getProperty("TESTRAIL_PASSWORD");
     APIClient client;
 
-    public Object get_test(String test_id, int statusCode) {
+    public JSONObject get_test(String test_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = null;
-        try {
-            response = (JSONObject) client.sendGet(GET_TEST + test_id, statusCode);
-            response.toJSONString();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
-            e.printStackTrace();
-        }
+        JSONObject response = (JSONObject) client.sendGet(GET_TEST + test_id, statusCode);
+        response.toJSONString();
+
         return response;
     }
 
-    public Object get_tests(String run_id, int statusCode) {
+    public JSONObject get_tests(String run_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = null;
-        try {
-            response = (JSONObject) client.sendGet(GET_TESTS + run_id, statusCode);
-            response.toJSONString();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
-            e.printStackTrace();
-        }
+        JSONObject response = (JSONObject) client.sendGet(GET_TESTS + run_id, statusCode);
+        response.toJSONString();
+
         return response;
     }
 }

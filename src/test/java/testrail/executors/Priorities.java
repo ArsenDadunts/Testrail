@@ -3,6 +3,7 @@ package testrail.executors;
 import org.json.simple.JSONArray;
 import testrail.APIClient;
 import testrail.APIException;
+
 import java.io.IOException;
 
 
@@ -22,13 +23,8 @@ public class Priorities {
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONArray response = null;
-        try {
-                response = (JSONArray) client.sendGet(GET_PRIORITIES, statusCode);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
-            e.printStackTrace();
-        }
+        response = (JSONArray) client.sendGet(GET_PRIORITIES, statusCode);
+
         return response;
     }
 }

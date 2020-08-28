@@ -25,28 +25,17 @@ public class Reports {
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONArray response = null;
-        try {
-            response = (JSONArray) client.sendGet(GET_REPORTS + project_id, statusCode);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
-            e.printStackTrace();
-        }
+        response = (JSONArray) client.sendGet(GET_REPORTS + project_id, statusCode);
+
         return response;
     }
 
-    public Object run_report(String report_template_id, int statusCode) {
+    public JSONObject run_report(String report_template_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = null;
-        try {
-            response = (JSONObject) client.sendGet(RUN_REPORT + report_template_id, statusCode);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
-            e.printStackTrace();
-        }
+        JSONObject response = (JSONObject) client.sendGet(RUN_REPORT + report_template_id, statusCode);
+
         return response;
     }
 }

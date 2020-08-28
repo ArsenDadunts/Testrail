@@ -1,40 +1,38 @@
 package tests;
 
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import testrail.executors.Cases;
+import testrail.executors.Projects;
 import testrail.payloads.CasePayload;
 
 import static testrail.utils.Utils_Constants.*;
 
 
 public class Case {
-    testrail.executors.Cases authentication = new testrail.executors.Cases();
+    String project_id;
+    Projects project;
+    Cases cases = new Cases();
     CasePayload payload = new CasePayload();
 
+    @BeforeClass
+    public void setup(){
+        project= new Projects();
+        JSONArray projects = project.get_projects_with_filters(200, 0);
+        JSONObject project = (JSONObject) projects.get(0);
+        project_id = project.get("id").toString();
 
-    @Test()
-    public void getCase() {
-        authentication.get_case("2", OK);
     }
 
-    @Test()
-    public void getCases() {
-        authentication.get_cases("1", OK, null);
+    @Test
+    public void add_case(){
+//        JSONObject response = cases.add_case()
     }
 
-    @Test()
-    public void addCase() {
-        for (int i = 0; i < 5; i++) {
-            authentication.add_case("1", payload.addCaseData(), OK);
-        }
-    }
-
-    @Test()
-    public void updateCase() {
-        authentication.update_case("1", payload.updateCaseData(1, "1m 30s"), OK);
-    }
-
-    @Test()
-    public void deleteCase() {
-        authentication.delete_case("1", OK);
+    @Test
+    public void get_cases(){
+        JSONArray response = cases.get_cases(project_id, 200);
     }
 }

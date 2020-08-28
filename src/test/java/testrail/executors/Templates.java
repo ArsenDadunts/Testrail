@@ -18,19 +18,13 @@ public class Templates {
             TESTRAIL_PASSWORD = getProperty("TESTRAIL_PASSWORD");
     APIClient client;
 
-    public Object get_templates(String project_id, int statusCode) {
+    public JSONObject get_templates(String project_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = null;
-        try {
-            response = (JSONObject) client.sendGet(GET_TEMPLATES + project_id, statusCode);
-            response.toJSONString();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
-            e.printStackTrace();
-        }
-       return response;
+        JSONObject response = (JSONObject) client.sendGet(GET_TEMPLATES + project_id, statusCode);
+        response.toJSONString();
+
+        return response;
     }
 }

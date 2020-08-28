@@ -24,89 +24,54 @@ public class Projects {
     APIClient client;
 
 
-    public Object get_project(String project_id, int statusCode) {
+    public JSONObject get_project(String project_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = null;
-        try {
-            response = (JSONObject) client.sendGet(GET_PROJECT + project_id, statusCode);
-            response.toJSONString();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
-            e.printStackTrace();
-        }
+        JSONObject response = (JSONObject) client.sendGet(GET_PROJECT + project_id, statusCode);
         return response;
     }
 
-    public JSONArray get_projects( int statusCode, HashMap filters) {
+    public JSONArray get_projects_without_filters(int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONArray response = null;
-        try {
-            if (filters.isEmpty()) {
-                response = (JSONArray) client.sendGet(GET_PROJECTS, statusCode);
-            } else {
-                String filter = "";
-                ArrayList keys = (ArrayList) filters.keySet();
-                for (int i = 0; i < filters.size(); i++) {
-                    filter += "&" + keys.get(i) + filters.get(keys.get(i));
-                }
-                response = (JSONArray) client.sendGet(GET_PROJECTS + filter, statusCode);
-            }
-            response.toJSONString();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
-            e.printStackTrace();
-        }
+        response = (JSONArray) client.sendGet(GET_PROJECTS, statusCode);
         return response;
     }
 
-    public Object add_project(Object data, int statusCode) {
+    public JSONArray get_projects_with_filters(int statusCode, int is_completed) {
+        client = new APIClient(BASE_URL);
+        client.setUser(TESTRAIL_USERNAME);
+        client.setPassword(TESTRAIL_PASSWORD);
+        String filter = "&is_completed="+is_completed;
+        JSONArray response = (JSONArray) client.sendGet(GET_PROJECTS + filter, statusCode);
+        return response;
+    }
+
+    public JSONObject add_project(Object data, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         JSONObject response = null;
-        try {
-            response = (JSONObject) client.sendPost(ADD_PROJECT, data, statusCode);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
-            e.printStackTrace();
-        }
+        response = (JSONObject) client.sendPost(ADD_PROJECT, data, statusCode);
         return response;
     }
 
-    public Object update_project(String project_id, Object data, int statusCode) {
+    public JSONObject update_project(String project_id, Object data, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = null;
-        try {
-            response = (JSONObject) client.sendPost(UPDATE_PROJECT + project_id, data, statusCode);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
-            e.printStackTrace();
-        }
+        JSONObject response = (JSONObject) client.sendPost(UPDATE_PROJECT + project_id, data, statusCode);
         return response;
     }
 
-    public Object delete_project(String project_id, int statusCode) {
+    public JSONObject delete_project(String project_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = null;
-        try {
-            response = (JSONObject) client.sendPost(DELETE_PROJECT + project_id, null, statusCode);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
-            e.printStackTrace();
-        }
+        JSONObject response = (JSONObject) client.sendPost(DELETE_PROJECT + project_id, null, statusCode);
         return response;
     }
 }

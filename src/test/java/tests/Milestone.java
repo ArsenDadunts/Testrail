@@ -18,7 +18,6 @@ public class Milestone {
 
     @Test()
     public void getCases() {
-        authentication.get_cases("1", OK, null);
     }
 
     @Test()

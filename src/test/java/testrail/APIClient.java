@@ -24,6 +24,7 @@ import java.util.Base64;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
+import static testrail.utils.Utils_Constants.convertToArray;
 import static testrail.utils.Utils_Constants.convertToObject;
 
 
@@ -57,19 +58,40 @@ public class APIClient {
         this.m_password = password;
     }
 
-    public Object sendGet(String uri, String data, int statusCode)
-            throws MalformedURLException, IOException, APIException {
-        return this.sendRequest("GET", uri, data, statusCode);
+    public Object sendGet(String uri, String data, int statusCode) {
+        JSONObject response = null;
+        try {
+            response = (JSONObject) this.sendRequest("GET", uri, data, statusCode);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (APIException e) {
+            e.printStackTrace();
+        }
+        return response;
     }
 
-    public Object sendGet(String uri, int statusCode)
-            throws MalformedURLException, IOException, APIException {
-        return this.sendRequest("GET", uri, null, statusCode);
+    public Object sendGet(String uri, int statusCode) {
+        Object response = null;
+        try {
+            response = this.sendRequest("GET", uri, null, statusCode);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (APIException e) {
+            e.printStackTrace();
+        }
+        return response;
     }
 
-    public Object sendPost(String uri, Object data, int statusCode)
-            throws MalformedURLException, IOException, APIException {
-        return this.sendRequest("POST", uri, data, statusCode);
+    public Object sendPost(String uri, Object data, int statusCode) {
+        JSONObject response = null;
+        try {
+            response = (JSONObject) this.sendRequest("POST", uri, data, statusCode);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (APIException e) {
+            e.printStackTrace();
+        }
+        return response;
     }
 
     private Object sendRequest(String method, String url, Object data, int statusCode)
@@ -87,6 +109,7 @@ public class APIClient {
                             .spec(specBuilder.build())
                             .multiPart(uploadFile)
                             .post(this.m_url + url);
+                    System.out.println("Response:");
                     response.prettyPrint();
                     assertEquals(response.statusCode(), statusCode);
                     return convertToObject(response);
@@ -97,6 +120,7 @@ public class APIClient {
                             .header("Content-Type", "application/json")
                             .body(res)
                             .post(this.m_url + url);
+                    System.out.println("Response:");
                     response.prettyPrint();
                     assertEquals(response.statusCode(), statusCode);
                     return convertToObject(response);
@@ -107,6 +131,7 @@ public class APIClient {
                         .header("Content-Type", "application/json")
                         .post(this.m_url + url);
                 response.getBody().prettyPrint();
+                System.out.println("Response:");
                 response.prettyPrint();
                 assertEquals(response.statusCode(), statusCode);
                 return convertToObject(response);
@@ -116,9 +141,14 @@ public class APIClient {
                     .header("Authorization", "Basic " + getAuthorization(this.m_user, this.m_password))
                     .header("Content-Type", "application/json")
                     .get(this.m_url + url);
+            System.out.println("Response:");
             response.prettyPrint();
             assertEquals(response.statusCode(), statusCode);
-            return convertToObject(response);
+            if (response.body().asString().startsWith("[")){
+                return convertToArray(response);
+            }else {
+                return convertToObject(response);
+            }
         }
 
         int status = response.statusCode();
