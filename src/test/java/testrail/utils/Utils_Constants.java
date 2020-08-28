@@ -3,6 +3,10 @@ package testrail.utils;
 import com.google.gson.Gson;
 import io.restassured.response.Response;
 
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Random;
+
 public class Utils_Constants {
 
     // response codes
@@ -14,5 +18,18 @@ public class Utils_Constants {
         String json = response.body().asString();
         Object res = new Gson().fromJson(json, Object.class);
         return res;
+    }
+
+    public static String generateTitle() {
+        return "Example test " + new Random().nextInt(999999999);
+    }
+
+    public static int generateRandomInt() {
+        return new Random().nextInt(65535);
+    }
+
+    public static String getDate() {
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        return ZonedDateTime.now().format(formatter2);
     }
 }

@@ -1,12 +1,13 @@
 package tests;
 
 import org.testng.annotations.Test;
+import testrail.executors.Cases;
 import testrail.payloads.CasePayload;
 
 import static testrail.utils.Utils_Constants.*;
 
 public class Milestone {
-    testrail.executors.Case authentication = new testrail.executors.Case();
+    Cases authentication = new Cases();
     CasePayload payload = new CasePayload();
 
 

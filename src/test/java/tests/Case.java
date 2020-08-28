@@ -7,7 +7,7 @@ import static testrail.utils.Utils_Constants.*;
 
 
 public class Case {
-    testrail.executors.Case authentication = new testrail.executors.Case();
+    testrail.executors.Cases authentication = new testrail.executors.Cases();
     CasePayload payload = new CasePayload();
 
 

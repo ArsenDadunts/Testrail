@@ -1,10 +1,9 @@
 package testrail.payloads;
 
 import org.json.simple.JSONObject;
-
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
+
+import static testrail.utils.Utils_Constants.*;
 
 public class CasePayload extends JSONObject {
     public String template_id = "TestRail 5.2";
@@ -41,18 +40,5 @@ public class CasePayload extends JSONObject {
         Map data = new HashMap();
         data.put("custom_steps_separated", steps);
         return data;
-    }
-
-    public static String generateTitle() {
-        return "Example test " + new Random().nextInt(999999999);
-    }
-
-    public static int generateRandomInt() {
-        return new Random().nextInt(65535);
-    }
-
-    public static String getDate() {
-        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        return ZonedDateTime.now().format(formatter2);
     }
 }

@@ -1,38 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ded75cab-c7ea-495a-bdc5-fcd4588ad141" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Testrail.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/const/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/const/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/APIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/APIClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/APIException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/APIException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Results.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Template.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Attachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Attachments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Cases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Case_Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Case_Fields.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Case_Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Priorities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Milestone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Milestones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Priority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Case_Types.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Projects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Reports.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Results.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Runs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Sections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Suite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Suites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Templates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/CasePayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/CasePayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/ResultPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/ResultPayload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/RunPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/RunPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/utils/Utils_Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/utils/Utils_Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Attachments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Attachment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Results.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Results.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Milestone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Milestone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Results.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Run.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Template.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Testrail.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Testrail.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/APIClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testrail/APIClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/APIException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testrail/APIException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Case.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testrail/executors/Case.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testrail/executors/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Results.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testrail/executors/Run.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Template.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testrail/executors/Template.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Attachment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Case.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Case_Field.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Case_Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Milestone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Priority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Project.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Report.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Run.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Section.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Suite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Template.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/executors/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/payloads/CasePayload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testrail/payloads/CasePayload.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/payloads/RunPayload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testrail/payloads/RunPayload.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testrail/utils/Utils_Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testrail/utils/Utils_Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Attachments.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Case.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Case.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Results.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Results.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Milestone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Milestone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Report.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Report.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Results.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Run.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Template.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Template.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,83 +93,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Suite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Report.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/Milestone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-end-line="3" />
-              <folding>
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#374#375#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/Report.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Template.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="34" column="5" selection-start-line="13" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/const/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="12" selection-start-line="40" selection-end-line="40" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -125,206 +100,30 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>auth</find>
-      <find>id</find>
-      <find>CreateCasePayload</find>
-      <find>Case</find>
-      <find>run</find>
-      <find>case</find>
-      <find>System.out.println(request.toJSONString());</find>
-      <find>impl</find>
-      <find>String id</find>
-      <find>Id) {</find>
-      <find>Map data) {</find>
-      <find>/</find>
-      <find>SE&quot;);</find>
-      <find>Map data,</find>
-      <find>id);</find>
-      <find>void</find>
-      <find>request</find>
-      <find>&quot;);</find>
-      <find>createSteps</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>CasePayload</replace>
-      <replace>Run</replace>
-      <replace>run</replace>
-      <replace>result</replace>
-      <replace>template</replace>
-      <replace />
-      <replace>String id, int statusCode</replace>
-      <replace>_id, int statusCode) {</replace>
-      <replace>Map data, int  statusCode) {</replace>
-      <replace>SE&quot;),</replace>
-      <replace>&quot;),</replace>
-      <replace>Object data,</replace>
-      <replace>id);</replace>
-      <replace>Object</replace>
-      <replace>response</replace>
-      <replace>&quot;, OK);</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src</dir>
-      <dir>$PROJECT_DIR$</dir>
-      <dir>$PROJECT_DIR$/src/test/java/testrail/executors</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/test/java/testrail/Authication.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/authn/Authication.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Authication.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/Authentication.java" />
-        <option value="$PROJECT_DIR$/src/testrail-api-master/java/com/gurock/testrail/APIClient.java" />
-        <option value="$PROJECT_DIR$/src/testrail-api-master/java/com/gurock/testrail/APIException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/APIException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/Login.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/BaseClass.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/payload/CreateCasePayload.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Authentication.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/payloads/CreateCasePayload.java" />
-        <option value="$PROJECT_DIR$/src/main/java/handlers/cases/Case.java" />
-        <option value="$PROJECT_DIR$/src/handlers/cases/Case.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/payloads/ResultPayload.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Results.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/APIClientCopy.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/APIClientCop2.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/BassClass.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/APIClientCopy2.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/payloads/RunPayload.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Attachments.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/utils/Utils_Constants.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Case_Field.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Case.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Milestone.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Result.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Project.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Run.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/Milestone.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/Results.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/Case.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/Run.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/Template.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/APIClient.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Attachment.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/Attachments.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/payloads/CasePayload.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Template.java" />
-        <option value="$PROJECT_DIR$/const/config.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Suite.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/Report.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testrail/executors/Report.java" />
-      </list>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Testrail" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Testrail" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Testrail" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Testrail" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="install" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="486" />
-    <option name="y" value="97" />
-    <option name="width" value="903" />
-    <option name="height" value="1048" />
-  </component>
+  <component name="ProjectId" id="1gMVBm1y5sPRElJsVIaUsB3tDdg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Testrail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testrail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testrail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testrail" type="462c0819:PsiDirectoryNode" />
-              <item name="const" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testrail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testrail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testrail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testrail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testrail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testrail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testrail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testrail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/testrail" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/groups-api-test" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.side.proportion" value="0.24827586" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -344,20 +143,8 @@
       <recent name="$PROJECT_DIR$/src/test/java/testrail" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="TestNG.Attachments.add_attachment_to_plan">
-    <configuration name="Attachments.add_attachment_to_plan" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Project.add_project">
+    <configuration name="Attachment.add_attachment_to_plan" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="Testrail" />
       <extension name="coverage">
         <pattern>
@@ -367,7 +154,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Attachments" />
+      <option name="MAIN_CLASS_NAME" value="tests.Attachment" />
       <option name="METHOD_NAME" value="add_attachment_to_plan" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -435,7 +222,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run.addRun" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="Project.add_project" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="Testrail" />
       <extension name="coverage">
         <pattern>
@@ -445,8 +232,8 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Run" />
-      <option name="METHOD_NAME" value="addRun" />
+      <option name="MAIN_CLASS_NAME" value="tests.Project" />
+      <option name="METHOD_NAME" value="add_project" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -461,7 +248,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Template.getCases" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="Run.addRun" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="Testrail" />
       <extension name="coverage">
         <pattern>
@@ -471,8 +258,8 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Template" />
-      <option name="METHOD_NAME" value="getCases" />
+      <option name="MAIN_CLASS_NAME" value="tests.Run" />
+      <option name="METHOD_NAME" value="addRun" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -506,14 +293,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Attachments.add_attachment_to_plan" />
+        <item itemvalue="TestNG.Project.add_project" />
+        <item itemvalue="TestNG.Attachment.add_attachment_to_plan" />
         <item itemvalue="TestNG.Run.addRun" />
         <item itemvalue="TestNG.Case.addCase" />
         <item itemvalue="TestNG.Case.getCaseCopy" />
-        <item itemvalue="TestNG.Template.getCases" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -527,546 +315,82 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="Case_addCase - 2020.07.14 at 15h 46m 47s.xml">
-      <configuration name="Case.addCase" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Case_addCase - 2020.07.14 at 15h 48m 59s.xml">
-      <configuration name="Case.addCase" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Case_addCase - 2020.07.14 at 15h 50m 28s.xml">
-      <configuration name="Case.addCase" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Case_addCase - 2020.07.14 at 15h 53m 36s.xml">
-      <configuration name="Case.addCase" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Case_addCase - 2020.07.14 at 15h 53m 47s.xml">
-      <configuration name="Case.addCase" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Case_addCase - 2020.07.14 at 15h 55m 45s.xml">
-      <configuration name="Case.addCase" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Case_addCase - 2020.07.14 at 15h 57m 03s.xml">
-      <configuration name="Case.addCase" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Run_addRun - 2020.07.14 at 16h 03m 09s.xml">
-      <configuration name="Run.addRun" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Run_addRun - 2020.07.14 at 16h 07m 21s.xml">
-      <configuration name="Run.addRun" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Attachments_add_attachment_to_plan - 2020.07.20 at 22h 42m 16s.xml">
-      <configuration name="Attachments.add_attachment_to_plan" configurationId="TestNG" />
-    </history-entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29076838" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31276152" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3294979" />
-      <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.3294979" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.2498618" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.32946378" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$USER_HOME$" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1197" y="27" width="694" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598528359366">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1197" y="27" width="694" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1598528359366" />
+    <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1598599403575">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1598599403575" />
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1598610426134">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1598610426134" />
+    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1598610426133">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1598610426133" />
+    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1598610426133">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1598610426133" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1598610426134">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1598610426134" />
+    <state x="429" y="188" width="1024" height="852" key="SettingsEditor" timestamp="1598598795191">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="429" y="188" width="1024" height="852" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1598598795191" />
+    <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1597924412997" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1598526647316">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.27.1920.1053@0.27.1920.1053" timestamp="1598526647316" />
+    <state x="475" y="272" width="959" height="654" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1598598057665">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="475" y="272" width="959" height="654" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1920.1053@0.27.1920.1053" timestamp="1598598057665" />
+    <state x="624" y="252" key="run.anything.popup" timestamp="1598527435727">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="624" y="252" key="run.anything.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1598527435727" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1598596741305">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1598596741305" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/testrail-api-master/.idea/vcs.xml" />
-    <entry file="file://$PROJECT_DIR$/src/testrail-api-master/java/readme.md" />
-    <entry file="file://$PROJECT_DIR$/src/testrail-api-master/java/com/gurock/testrail/APIClient.java" />
-    <entry file="file://$PROJECT_DIR$/src/testrail-api-master/java/com/gurock/testrail/APIException.java" />
-    <entry file="file://$PROJECT_DIR$/src/testrail-api-master/readme.md" />
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="713" column="14" lean-forward="true" selection-start-line="713" selection-start-column="14" selection-end-line="713" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/BaseClass.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/payloads/ResultPayload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/rt.jar!/sun/net/www/MessageHeader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/IllegalStateException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-          <folding>
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/net/URLConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="899" column="39" selection-start-line="899" selection-start-column="39" selection-end-line="899" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/APIException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/BassClass.java" />
-    <entry file="file://$PROJECT_DIR$/APIClientCopy2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/payloads/RunPayload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Case_Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Case_Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Case_Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Priority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Priority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Section.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Section.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Suite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/4.2.0/rest-assured-4.2.0.jar!/io/restassured/response/ResponseBodyData.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/io/IOException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/images/test_image_1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/utils/Utils_Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1106">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Milestone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="82" column="42" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Results.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="99" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Run.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Run.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Attachment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Attachments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Case.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Case.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-191">
-          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Case_Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="13" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Template.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/payloads/CasePayload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/APIClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="82" column="57" selection-start-line="82" selection-start-column="57" selection-end-line="82" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Suite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Milestone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-end-line="3" />
-          <folding>
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testrail/executors/Template.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="34" column="5" selection-start-line="13" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/const/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="12" selection-start-line="40" selection-end-line="40" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Python 3.5 (OpenfitAPIs) interpreter library</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Testrail</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>java</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

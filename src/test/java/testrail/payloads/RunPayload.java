@@ -1,6 +1,7 @@
 package testrail.payloads;
 
 import org.json.simple.JSONObject;
+import testrail.utils.Utils_Constants;
 
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -15,8 +16,8 @@ public class RunPayload extends JSONObject {
     public Map addRunData(ArrayList case_ids) {
         Map map = new HashMap();
         map.put("suite_id", 1);
-        map.put("name", generateTitle());
-        map.put("description", generateTitle());
+        map.put("run ", "Run"+ Utils_Constants.generateRandomInt());
+        map.put("description", "Description"+Utils_Constants.generateRandomInt());
 //        map.put("milestone_id", 1);
         map.put("assignedto_id", 1);
         map.put("include_all", true);
@@ -30,18 +31,5 @@ public class RunPayload extends JSONObject {
         map.put("priority_id", priority_id);
         map.put("estimate", estimate);
         return map;
-    }
-
-    public static String generateTitle() {
-        return "Example test Run " + new Random().nextInt(999999999);
-    }
-
-    public static int generateRandomInt() {
-        return new Random().nextInt(65535);
-    }
-
-    public static String getDate() {
-        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        return ZonedDateTime.now().format(formatter2);
     }
 }

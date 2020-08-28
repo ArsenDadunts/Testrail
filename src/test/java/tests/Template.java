@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import static testrail.utils.Utils_Constants.OK;
 
 public class Template {
-    testrail.executors.Template authentication = new testrail.executors.Template();
+    testrail.executors.Templates authentication = new testrail.executors.Templates();
 
     @Test()
     public void getCases() {
