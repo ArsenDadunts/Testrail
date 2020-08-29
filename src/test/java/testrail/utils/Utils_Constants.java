@@ -16,6 +16,11 @@ public class Utils_Constants {
     public static final int OK = 200;
     public static final int BAD_REQUEST = 400;
     public static final int FORBIDDEN = 403;
+    //
+    public static final int PASSED = 1;
+    public static final int BLOCKED = 2;
+    public static final int RETEST = 4;
+    public static final int FAILED = 3;
 
     public static Object convertToObject(Response response) {
         JSONParser parser = new JSONParser();

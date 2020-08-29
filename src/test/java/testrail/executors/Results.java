@@ -3,11 +3,10 @@ package testrail.executors;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import testrail.APIClient;
-import testrail.APIException;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Set;
 
 import static java.lang.System.getProperty;
 
@@ -29,14 +28,14 @@ public class Results {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONArray response = null;
+        JSONArray response;
         if (filters.isEmpty()) {
             response = (JSONArray) client.sendGet(GET_RESULTS + test_id, statusCode);
         } else {
-            String filter = "";
+            StringBuilder filter = new StringBuilder();
             ArrayList keys = (ArrayList) filters.keySet();
             for (int i = 0; i < filters.size(); i++) {
-                filter += "&" + keys.get(i) + filters.get(keys.get(i));
+                filter.append("&").append(keys.get(i)).append("=").append(filters.get(keys.get(i)));
             }
             response = (JSONArray) client.sendGet(GET_RESULTS + test_id + filter, statusCode);
         }
@@ -49,34 +48,38 @@ public class Results {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONArray response = null;
+        JSONArray response;
+        StringBuilder builder = new StringBuilder();
+        builder.append(GET_RESULTS_FOR_CASE).append(run_id).append("/").append(case_id);
         if (filters.isEmpty()) {
-            response = (JSONArray) client.sendGet(GET_RESULTS_FOR_CASE + run_id + "/" + case_id, statusCode);
+            response = (JSONArray) client.sendGet(builder.toString(), statusCode);
         } else {
-            String filter = "";
-            ArrayList keys = (ArrayList) filters.keySet();
-            for (int i = 0; i < filters.size(); i++) {
-                filter += "&" + keys.get(i) + filters.get(keys.get(i));
+            StringBuilder filter = new StringBuilder();
+            Set keys = filters.keySet();
+            for (Object key : keys
+            ) {
+                filter.append("&").append(key.toString()).append("=").append(filters.get(key.toString()));
             }
-            response = (JSONArray) client.sendGet(GET_RESULTS_FOR_CASE + case_id + filter, statusCode);
+            response = (JSONArray) client.sendGet(builder.toString() + filter, statusCode);
         }
         response.toJSONString();
 
         return response;
     }
 
-    public JSONArray get_results_for_run(String run_id, int statusCode, HashMap filters) {
+    public JSONArray get_results_for_run(String run_id, HashMap filters, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONArray response = null;
+        JSONArray response;
         if (filters.isEmpty()) {
             response = (JSONArray) client.sendGet(GET_RESULTS_FOR_RUN + run_id, statusCode);
         } else {
-            String filter = "";
-            ArrayList keys = (ArrayList) filters.keySet();
-            for (int i = 0; i < filters.size(); i++) {
-                filter += "&" + keys.get(i) + filters.get(keys.get(i));
+            StringBuilder filter = new StringBuilder();
+            Set keys = filters.keySet();
+            for (Object key : keys
+            ) {
+                filter.append("&").append(key.toString()).append("=").append(filters.get(key.toString()));
             }
             response = (JSONArray) client.sendGet(GET_RESULTS_FOR_RUN + run_id + filter, statusCode);
         }
@@ -89,25 +92,22 @@ public class Results {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = (JSONObject) client.sendPost(ADD_RESULT + test_id, data, statusCode);
 
-        return response;
+        return (JSONObject) client.sendPost(ADD_RESULT + test_id, data, statusCode);
     }
 
     public JSONObject add_result_for_case(String run_id, String case_id, Object data, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = (JSONObject) client.sendPost(ADD_RESULT_FOR_CASE + run_id + "/" + case_id, data, statusCode);
-
-        return response;
+        return (JSONObject) client.sendPost(ADD_RESULT_FOR_CASE + run_id + "/" + case_id, data, statusCode);
     }
 
     public JSONArray add_results(String run_id, int statusCode, Object data) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONArray response = null;
+        JSONArray response;
         response = (JSONArray) client.sendPost(ADD_RESULTS + run_id, data, statusCode);
 
         return response;
@@ -117,8 +117,7 @@ public class Results {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = (JSONObject) client.sendPost(ADD_RESULTS_FOR_CASES + run_id, data, statusCode);
 
-        return response;
+        return (JSONObject) client.sendPost(ADD_RESULTS_FOR_CASES + run_id, data, statusCode);
     }
 }

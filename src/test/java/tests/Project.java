@@ -6,10 +6,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import testrail.executors.Projects;
 import testrail.payloads.ProjectPayload;
-
-import java.util.HashMap;
-import java.util.Map;
-
 import static testrail.utils.Utils_Constants.*;
 
 public class Project {
@@ -52,7 +48,7 @@ public class Project {
         String project_id = response.get("id").toString();
         Assert.assertEquals(response.get("name"), payload.name);
         Assert.assertEquals(response.get("show_announcement"), payload.show_announcement);
-        JSONObject res = projects.delete_project(project_id, OK);
+        projects.delete_project(project_id, OK);
     }
 
     @Test
@@ -73,8 +69,8 @@ public class Project {
     @Test
     public void get_projects_without_filters(){
         JSONArray res = projects.get_projects_without_filters(OK);
-        for (int i = 0; i < res.size(); i++) {
-            JSONObject object = (JSONObject) res.get(i);
+        for (Object re : res) {
+            JSONObject object = (JSONObject) re;
             Assert.assertNotNull(object.get("announcement"));
             Assert.assertNotNull(object.get("id"));
             Assert.assertNotNull(object.get("is_completed"));
@@ -87,8 +83,8 @@ public class Project {
     @Test
     public void get_projects_with_filters(){
         JSONArray res = projects.get_projects_with_filters(OK, 0);
-        for (int i = 0; i < res.size(); i++) {
-            JSONObject object = (JSONObject) res.get(i);
+        for (Object re : res) {
+            JSONObject object = (JSONObject) re;
             Assert.assertNotNull(object.get("announcement"));
             Assert.assertNotNull(object.get("id"));
             Assert.assertNull(object.get("completed_on"));

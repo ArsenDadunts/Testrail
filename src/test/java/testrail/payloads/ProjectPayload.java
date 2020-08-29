@@ -15,7 +15,6 @@ public class ProjectPayload {
 
     public Object updateProject() {
         Map payload = convertObjectToMap(new Update());
-        payload.remove("content");
         return payload;
     }
 }

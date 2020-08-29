@@ -10,11 +10,10 @@ import java.util.Map;
 import java.util.Random;
 
 public class ResultPayload extends JSONObject {
-    public String template_id = "TestRail 5.2";
 
-    public Map addResultData(String comment, String version, String defects, int assignedto_id) {
+    public Map addResultData(int status_id, String comment, String version, String defects, int assignedto_id) {
         Map map = new HashMap();
-        map.put("status_id", 1);
+        map.put("status_id", status_id);
         map.put("comment", comment);
         map.put("version", version);
         map.put("elapsed", "30s");
@@ -28,18 +27,5 @@ public class ResultPayload extends JSONObject {
         map.put("priority_id", priority_id);
         map.put("estimate", estimate);
         return map;
-    }
-
-    public static String generateTitle() {
-        return "Example test " + new Random().nextInt(999999999);
-    }
-
-    public static int generateRandomInt() {
-        return new Random().nextInt(65535);
-    }
-
-    public static String getDate() {
-        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        return ZonedDateTime.now().format(formatter2);
     }
 }

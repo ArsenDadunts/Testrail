@@ -3,11 +3,6 @@ package testrail.executors;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import testrail.APIClient;
-import testrail.APIException;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
 
 import static java.lang.System.getProperty;
 
@@ -28,17 +23,14 @@ public class Projects {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = (JSONObject) client.sendGet(GET_PROJECT + project_id, statusCode);
-        return response;
+        return (JSONObject) client.sendGet(GET_PROJECT + project_id, statusCode);
     }
 
     public JSONArray get_projects_without_filters(int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONArray response = null;
-        response = (JSONArray) client.sendGet(GET_PROJECTS, statusCode);
-        return response;
+        return (JSONArray) client.sendGet(GET_PROJECTS, statusCode);
     }
 
     public JSONArray get_projects_with_filters(int statusCode, int is_completed) {
@@ -46,15 +38,14 @@ public class Projects {
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
         String filter = "&is_completed="+is_completed;
-        JSONArray response = (JSONArray) client.sendGet(GET_PROJECTS + filter, statusCode);
-        return response;
+        return (JSONArray) client.sendGet(GET_PROJECTS + filter, statusCode);
     }
 
     public JSONObject add_project(Object data, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = null;
+        JSONObject response;
         response = (JSONObject) client.sendPost(ADD_PROJECT, data, statusCode);
         return response;
     }
@@ -63,15 +54,13 @@ public class Projects {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = (JSONObject) client.sendPost(UPDATE_PROJECT + project_id, data, statusCode);
-        return response;
+        return (JSONObject) client.sendPost(UPDATE_PROJECT + project_id, data, statusCode);
     }
 
-    public JSONObject delete_project(String project_id, int statusCode) {
+    public void delete_project(String project_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = (JSONObject) client.sendPost(DELETE_PROJECT + project_id, null, statusCode);
-        return response;
+        client.sendPost(DELETE_PROJECT + project_id, null, statusCode);
     }
 }
