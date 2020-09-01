@@ -1,17 +1,18 @@
 package testrail.payloads;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.json.simple.JSONObject;
 
+import java.io.File;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class ResultPayload extends JSONObject {
+    ObjectMapper mapper = new ObjectMapper();
 
-    public Map addResultData(int status_id, String comment, String version, String defects, int assignedto_id) {
+    public Map addResultData(int status_id, String comment, String version, String defects, String assignedto_id) {
         Map map = new HashMap();
         map.put("status_id", status_id);
         map.put("comment", comment);
@@ -26,6 +27,17 @@ public class ResultPayload extends JSONObject {
         Map map = new HashMap();
         map.put("priority_id", priority_id);
         map.put("estimate", estimate);
+        return map;
+    }
+
+    public Map addResults(String file){
+        Map<String, Object> map = null;
+        try {
+            map = mapper.readValue(new File(file), new TypeReference<Map<String, Object>>() {
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return map;
     }
 }

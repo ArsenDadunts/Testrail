@@ -1,7 +1,5 @@
 package testrail.payloads;
 
-import testrail.utils.Utils_Constants;
-
 import java.util.Map;
 import java.util.Random;
 

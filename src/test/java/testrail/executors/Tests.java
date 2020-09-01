@@ -1,10 +1,8 @@
 package testrail.executors;
 
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import testrail.APIClient;
-import testrail.APIException;
-
-import java.io.IOException;
 
 import static java.lang.System.getProperty;
 
@@ -21,19 +19,13 @@ public class Tests {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = (JSONObject) client.sendGet(GET_TEST + test_id, statusCode);
-        response.toJSONString();
-
-        return response;
+        return (JSONObject) client.sendGet(GET_TEST + test_id, statusCode);
     }
 
-    public JSONObject get_tests(String run_id, int statusCode) {
+    public JSONArray get_tests(String run_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = (JSONObject) client.sendGet(GET_TESTS + run_id, statusCode);
-        response.toJSONString();
-
-        return response;
+        return (JSONArray) client.sendGet(GET_TESTS + run_id, statusCode);
     }
 }

@@ -22,9 +22,6 @@ public class Priorities {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONArray response = null;
-        response = (JSONArray) client.sendGet(GET_PRIORITIES, statusCode);
-
-        return response;
+        return (JSONArray) client.sendGet(GET_PRIORITIES, statusCode);
     }
 }

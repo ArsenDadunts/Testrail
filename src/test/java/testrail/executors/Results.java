@@ -103,7 +103,7 @@ public class Results {
         return (JSONObject) client.sendPost(ADD_RESULT_FOR_CASE + run_id + "/" + case_id, data, statusCode);
     }
 
-    public JSONArray add_results(String run_id, int statusCode, Object data) {
+    public JSONArray add_results(String run_id, Object data,  int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
@@ -113,11 +113,11 @@ public class Results {
         return response;
     }
 
-    public JSONObject add_results_for_cases(String run_id, Object data, int statusCode) {
+    public JSONArray add_results_for_cases(String run_id, Object data, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
 
-        return (JSONObject) client.sendPost(ADD_RESULTS_FOR_CASES + run_id, data, statusCode);
+        return (JSONArray) client.sendPost(ADD_RESULTS_FOR_CASES + run_id, data, statusCode);
     }
 }

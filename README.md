@@ -37,5 +37,4 @@ This repository contains bindings on how to access TestRail's API (v2).
             │                 
             │               
             └── resources
-                ├── images
-                └── schemas
+                └── images

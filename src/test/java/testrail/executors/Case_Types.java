@@ -2,10 +2,6 @@ package testrail.executors;
 
 import org.json.simple.JSONArray;
 import testrail.APIClient;
-import testrail.APIException;
-
-import java.io.IOException;
-
 
 import static java.lang.System.getProperty;
 
@@ -22,9 +18,6 @@ public class Case_Types {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONArray response = null;
-        response = (JSONArray) client.sendGet(GET_CASE_TYPES, statusCode);
-
-        return response;
+        return (JSONArray) client.sendGet(GET_CASE_TYPES, statusCode);
     }
 }

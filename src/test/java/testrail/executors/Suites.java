@@ -1,10 +1,8 @@
 package testrail.executors;
 
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import testrail.APIClient;
-import testrail.APIException;
-
-import java.io.IOException;
 
 import static java.lang.System.getProperty;
 
@@ -30,11 +28,19 @@ public class Suites {
         return response;
     }
 
-    public JSONObject get_suites(String project_id, int statusCode) {
+    public JSONArray get_suites(String project_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = (JSONObject) client.sendGet(GET_SUITES + project_id, statusCode);
+        return (JSONArray) client.sendGet(GET_SUITES + project_id, statusCode);
+
+    }
+
+    public JSONObject add_suite(String project_id, Object data, int statusCode) {
+        client = new APIClient(BASE_URL);
+        client.setUser(TESTRAIL_USERNAME);
+        client.setPassword(TESTRAIL_PASSWORD);
+        JSONObject response = (JSONObject) client.sendPost(ADD_SUITE + project_id, data, statusCode);
         response.toJSONString();
 
         return response;
@@ -50,13 +56,10 @@ public class Suites {
         return response;
     }
 
-    public JSONObject delete_suite(String suite_id, int statusCode) {
+    public void delete_suite(String suite_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = (JSONObject) client.sendPost(DELETE_SUITE + suite_id, null, statusCode);
-        response.toJSONString();
-
-        return response;
+        client.sendPost(DELETE_SUITE + suite_id, null, statusCode);
     }
 }

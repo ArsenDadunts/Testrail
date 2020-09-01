@@ -2,7 +2,6 @@ package tests;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -12,10 +11,11 @@ import testrail.payloads.RunPayload;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import static testrail.utils.Utils_Constants.CREATED_BY_ID;
 import static testrail.utils.Utils_Constants.OK;
 
 public class Run {
-    ArrayList caseIds = new ArrayList();
+    ArrayList<Object> caseIds = new ArrayList<>();
     String project_id;
     Runs runs = new Runs();
     Cases get_case;
@@ -147,8 +147,8 @@ public class Run {
     @Test
     public void get_runs(){
         //get runs
-        HashMap filters = new HashMap();
-        filters.put("created_by", "1");
+        HashMap<String, String> filters = new HashMap<>();
+        filters.put("created_by", CREATED_BY_ID);
         JSONArray res = runs.get_runs(project_id,filters, OK);
         for (Object re : res) {
             JSONObject response = (JSONObject) re;
