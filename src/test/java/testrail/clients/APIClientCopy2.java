@@ -10,7 +10,7 @@
  * Copyright Gurock Software GmbH. See license.md for details.
  */
 
-package testrail;
+package testrail.clients;
 
 import java.net.URL;
 import java.net.HttpURLConnection;
@@ -29,7 +29,7 @@ import java.util.Base64;
 
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
-import testrail.APIException;
+import testrail.exceptions.APIException;
 
 
 public class APIClientCopy2 {

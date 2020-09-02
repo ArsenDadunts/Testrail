@@ -16,6 +16,8 @@ This repository contains bindings on how to access TestRail's API (v2).
             │           ├── common
             │           │   ├── Utils.java
             │           │   └── Constants.java
+            │           ├── exceptions
+            │           │   └── APIException.java
             │           ├── executors
             │           │   ├── Attachments.java
             │           │   ├── Case_Fields.java

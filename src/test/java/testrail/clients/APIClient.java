@@ -17,7 +17,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.response.Response;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
-import testrail.APIException;
+import testrail.exceptions.APIException;
 
 import java.io.*;
 import java.net.MalformedURLException;

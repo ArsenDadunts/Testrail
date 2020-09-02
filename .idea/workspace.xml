@@ -30,44 +30,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ded75cab-c7ea-495a-bdc5-fcd4588ad141" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/APIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/clients/APIClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Attachments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Attachments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Case_Fields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Case_Fields.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Case_Types.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Case_Types.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Cases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Cases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Milestones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Milestones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Priorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Priorities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Projects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Projects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Reports.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Reports.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Results.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Results.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Runs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Runs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Sections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Sections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Suites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Suites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Templates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Templates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/CaseFieldPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/CaseFieldPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/CasePayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/CasePayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/MilestonePayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/MilestonePayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/ProjectPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/ProjectPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/RunPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/RunPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/SectionPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/SectionPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/SuitePayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/SuitePayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/utils/Utils_Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/common/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Attachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Attachment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Case_Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Case_Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Case_Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Case_Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Milestone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Milestone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Priority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Priority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Section.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Suite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Suite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Template.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/APIException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/exceptions/APIException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/clients/APIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/clients/APIClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
