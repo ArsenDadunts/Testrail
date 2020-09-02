@@ -1,15 +1,14 @@
-package tests;
+package testrail.tests;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import testrail.common.Constants;
 import testrail.executors.*;
 
 import java.util.HashMap;
-
-import static testrail.utils.Utils_Constants.*;
 
 public class Attachment {
     Attachments attachments = new Attachments();
@@ -23,17 +22,17 @@ public class Attachment {
     public void setup() {
         run = new Runs();
         project = new Projects();
-        JSONArray projects = project.get_projects_with_filters(OK, 0);
+        JSONArray projects = project.get_projects_with_filters(Constants.OK, 0);
         JSONObject project = (JSONObject) projects.get(0);
         project_id = project.get("id").toString();
         //get runs
         HashMap<String, String> filters = new HashMap<>();
-        filters.put("created_by", CREATED_BY_ID);
-        JSONArray runs = run.get_runs(project_id, filters, OK);
+        filters.put("created_by", Constants.CREATED_BY_ID);
+        JSONArray runs = run.get_runs(project_id, filters, Constants.OK);
         JSONObject run = (JSONObject) runs.get(0);
         run_id = run.get("id").toString();
         //get results
-        JSONArray res = results.get_results_for_run(run_id,filters, OK);
+        JSONArray res = results.get_results_for_run(run_id,filters, Constants.OK);
         JSONObject object = (JSONObject) res.get(0);
         result_id = object.get("id").toString();
 
@@ -41,7 +40,7 @@ public class Attachment {
 
     @Test
     public void add_attachment_to_result() {
-        JSONObject res = attachments.add_attachment_to_result(result_id, EXAMPLE_ATTACHMENT_FILE, OK);
+        JSONObject res = attachments.add_attachment_to_result(result_id, Constants.EXAMPLE_ATTACHMENT_FILE, Constants.OK);
         Assert.assertNotNull(res.get("attachment_id"));
     }
 }

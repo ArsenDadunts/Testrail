@@ -1,10 +1,7 @@
 package testrail.executors;
 
 import org.json.simple.JSONArray;
-import testrail.APIClient;
-import testrail.APIException;
-
-import java.io.IOException;
+import testrail.clients.APIClient;
 
 
 import static java.lang.System.getProperty;

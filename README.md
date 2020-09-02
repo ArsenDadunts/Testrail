@@ -11,6 +11,11 @@ This repository contains bindings on how to access TestRail's API (v2).
         └── test
             ├── java
             │   └── testrail
+            │           ├── clients
+            │           │   └── APIClient.java
+            │           ├── common
+            │           │   ├── Utils.java
+            │           │   └── Constants.java
             │           ├── executors
             │           │   ├── Attachments.java
             │           │   ├── Case_Fields.java
@@ -31,10 +36,6 @@ This repository contains bindings on how to access TestRail's API (v2).
             │           │   ├── ResultPayload.java
             │           │   ├── RunPayload.java
             │           │   └── SectionPayload.java     
-            │           ├── utils
-            │           │   └── Utils_Constants.java    
             │           └── __tests__          
-            │                 
-            │               
             └── resources
                 └── images

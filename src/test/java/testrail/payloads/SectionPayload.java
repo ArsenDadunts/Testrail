@@ -1,9 +1,9 @@
 package testrail.payloads;
 
-import testrail.utils.Utils_Constants;
+import testrail.common.Utils;
 
 public class SectionPayload {
-    public String description = "description "+Utils_Constants.generateRandomInt();
+    public String description = "description "+ Utils.generateRandomInt();
     public long suite_id;
-    public String name = "Section Name " + Utils_Constants.generateRandomInt();
+    public String name = "Section Name " + Utils.generateRandomInt();
 }

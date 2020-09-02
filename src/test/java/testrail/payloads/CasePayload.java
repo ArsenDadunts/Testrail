@@ -2,7 +2,7 @@ package testrail.payloads;
 
 import java.util.*;
 
-import static testrail.utils.Utils_Constants.*;
+import static testrail.common.Utils.*;
 
 @SuppressWarnings("rawtypes")
 public class CasePayload {

@@ -1,4 +1,4 @@
-package tests;
+package testrail.tests;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -11,7 +11,7 @@ import testrail.payloads.MilestonePayload;
 
 import java.util.HashMap;
 
-import static testrail.utils.Utils_Constants.OK;
+import static testrail.common.Constants.OK;
 
 public class Milestone {
     String project_id;

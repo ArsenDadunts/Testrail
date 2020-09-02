@@ -2,9 +2,8 @@ package testrail.executors;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import testrail.APIClient;
+import testrail.clients.APIClient;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
 

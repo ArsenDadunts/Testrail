@@ -1,4 +1,4 @@
-package testrail.utils;
+package testrail.common;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;
@@ -6,36 +6,13 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.*;
 
-import java.io.*;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-public class Utils_Constants {
-    // response codes
-    public static final int OK = 200;
-    public static final int BAD_REQUEST = 400;
-    public static final int FORBIDDEN = 403;
-    //test result
-    public static final int PASSED = 1;
-    public static final int BLOCKED = 2;
-    public static final int RETEST = 4;
-    public static final int UNTESTED = 3;
-    public static final int FAILED = 5;
-    //ids
-    public static final String EXAMPLE_TEST_ID = "1";
-    public static final String ASSIGNED_TO_ID = "1";
-    public static final String CREATED_BY_ID = "1";
-    //example files
-    public static final String RESOURCES_RESULTS_FOR_CASES_JSON = "src/test/resources/results_for_cases.json";
-    public static final String RESOURCES_RESULTS_FOR_JSON = "src/test/resources/results.json";
-    public static final String EXAMPLE_ATTACHMENT_FILE = "src/test/resources/images/test_image_1.jpg";
-
-
-
+public class Utils {
     public static Object convertToObject(Response response) {
         JSONParser parser = new JSONParser();
         JSONObject json = null;

@@ -10,13 +10,14 @@
  * Copyright Gurock Software GmbH. See license.md for details.
  */
 
-package testrail;
+package testrail.clients;
 
 import com.google.gson.Gson;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.response.Response;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
+import testrail.APIException;
 
 import java.io.*;
 import java.net.MalformedURLException;
@@ -24,8 +25,8 @@ import java.util.Base64;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertEquals;
-import static testrail.utils.Utils_Constants.convertToArray;
-import static testrail.utils.Utils_Constants.convertToObject;
+import static testrail.common.Utils.convertToArray;
+import static testrail.common.Utils.convertToObject;
 
 
 public class APIClient {

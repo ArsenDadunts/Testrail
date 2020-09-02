@@ -1,12 +1,9 @@
 package testrail.payloads;
 
-import org.json.simple.JSONObject;
-
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 
-import static testrail.utils.Utils_Constants.*;
+import static testrail.common.Utils.*;
 
 public class RunPayload {
     public int suite_id = 1;

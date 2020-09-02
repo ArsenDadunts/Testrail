@@ -1,4 +1,4 @@
-package tests;
+package testrail.tests;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import testrail.executors.*;
 
-import static testrail.utils.Utils_Constants.OK;
+import static testrail.common.Constants.OK;
 
 public class Template {
     Projects projects = new Projects();

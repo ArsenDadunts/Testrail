@@ -1,4 +1,4 @@
-package tests;
+package testrail.tests;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -6,19 +6,21 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import testrail.executors.*;
 
-import static testrail.utils.Utils_Constants.OK;
+import static testrail.common.Constants.OK;
 
-public class Case_Type {
-    Case_Types case_types = new Case_Types();
+public class Priority {
+    Priorities priorities = new Priorities();
 
     @Test
-    public void get_case_types() {
-        JSONArray res = case_types.get_case_types(OK);
+    public void get_priorities() {
+        JSONArray res = priorities.get_priorities(OK);
         for (Object re : res) {
             JSONObject object = (JSONObject) re;
             Assert.assertNotNull(object.get("id"));
             Assert.assertNotNull(object.get("name"));
+            Assert.assertNotNull(object.get("short_name"));
             Assert.assertNotNull(object.get("is_default"));
+            Assert.assertNotNull(object.get("priority"));
         }
     }
 }

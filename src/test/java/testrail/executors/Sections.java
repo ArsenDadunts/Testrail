@@ -2,12 +2,7 @@ package testrail.executors;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import testrail.APIClient;
-import testrail.APIException;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
+import testrail.clients.APIClient;
 
 import static java.lang.System.getProperty;
 

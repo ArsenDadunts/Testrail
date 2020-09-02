@@ -1,6 +1,6 @@
 package testrail.payloads;
 
-import static testrail.utils.Utils_Constants.generateRandomInt;
+import static testrail.common.Utils.generateRandomInt;
 
 public class SuitePayload {
     public String description = "description "+ generateRandomInt();

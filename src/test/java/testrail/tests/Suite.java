@@ -1,4 +1,4 @@
-package tests;
+package testrail.tests;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -9,7 +9,7 @@ import testrail.executors.*;
 import testrail.payloads.SuitePayload;
 
 
-import static testrail.utils.Utils_Constants.OK;
+import static testrail.common.Constants.OK;
 
 public class Suite {
     String project_id;

@@ -4,7 +4,7 @@ import org.json.simple.JSONObject;
 
 import java.util.ArrayList;
 
-import static testrail.utils.Utils_Constants.*;
+import static testrail.common.Utils.*;
 
 public class CaseFieldPayload {
     public String type = "Multiselect";

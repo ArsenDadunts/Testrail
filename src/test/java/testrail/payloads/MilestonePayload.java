@@ -1,7 +1,7 @@
 package testrail.payloads;
 import java.util.Map;
 
-import static testrail.utils.Utils_Constants.*;
+import static testrail.common.Utils.*;
 
 public class MilestonePayload {
     public String description = "description "+ generateRandomInt();

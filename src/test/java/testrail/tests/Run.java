@@ -1,4 +1,4 @@
-package tests;
+package testrail.tests;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -11,8 +11,8 @@ import testrail.payloads.RunPayload;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import static testrail.utils.Utils_Constants.CREATED_BY_ID;
-import static testrail.utils.Utils_Constants.OK;
+import static testrail.common.Constants.CREATED_BY_ID;
+import static testrail.common.Constants.OK;
 
 public class Run {
     ArrayList<Object> caseIds = new ArrayList<>();

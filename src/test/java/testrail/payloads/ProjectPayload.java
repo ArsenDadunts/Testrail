@@ -3,7 +3,7 @@ package testrail.payloads;
 import java.util.Map;
 import java.util.Random;
 
-import static testrail.utils.Utils_Constants.*;
+import static testrail.common.Utils.*;
 
 public class ProjectPayload {
     public String name = "Project Name " + generateRandomInt();
