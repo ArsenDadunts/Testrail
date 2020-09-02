@@ -12,7 +12,7 @@ public class Case_Type {
     Case_Types case_types = new Case_Types();
 
     @Test
-    public void get_priorities() {
+    public void get_case_types() {
         JSONArray res = case_types.get_case_types(OK);
         for (Object re : res) {
             JSONObject object = (JSONObject) re;

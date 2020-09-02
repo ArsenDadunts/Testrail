@@ -15,23 +15,17 @@ public class Case_Fields {
             TESTRAIL_PASSWORD = getProperty("TESTRAIL_PASSWORD");
     APIClient client;
 
-    public JSONObject get_case_fields(int statusCode) {
+    public JSONArray get_case_fields(int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = (JSONObject) client.sendGet(GET_CASE_FIELDS, statusCode);
-        response.toJSONString();
-
-        return response;
+        return (JSONArray) client.sendGet(GET_CASE_FIELDS, statusCode);
     }
 
     public JSONObject add_case_field(Object data, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        JSONObject response = (JSONObject) client.sendPost(ADD_CASE_FIELD, data, statusCode);
-        response.toJSONString();
-
-        return response;
+        return (JSONObject) client.sendPost(ADD_CASE_FIELD, data, statusCode);
     }
 }

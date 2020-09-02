@@ -32,6 +32,8 @@ public class Utils_Constants {
     //example files
     public static final String RESOURCES_RESULTS_FOR_CASES_JSON = "src/test/resources/results_for_cases.json";
     public static final String RESOURCES_RESULTS_FOR_JSON = "src/test/resources/results.json";
+    public static final String EXAMPLE_ATTACHMENT_FILE = "src/test/resources/images/test_image_1.jpg";
+
 
 
     public static Object convertToObject(Response response) {
@@ -62,8 +64,8 @@ public class Utils_Constants {
         return map;
     }
 
-    public static String generateTitle() {
-        return "Example test " + new Random().nextInt(999999999);
+    public static String generateString() {
+        return ""+new Random().nextInt(999999999);
     }
 
     public static int generateRandomInt() {

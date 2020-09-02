@@ -1,14 +1,12 @@
 package testrail.payloads;
 
-import org.json.simple.JSONObject;
-
 import java.util.*;
 
 import static testrail.utils.Utils_Constants.*;
 
 @SuppressWarnings("rawtypes")
 public class CasePayload {
-    public String title = generateTitle();
+    public String title = generateString();
     public int type_id = 1;
     public int template_id = 2;
     public int priority_id = 3;
