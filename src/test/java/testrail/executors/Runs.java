@@ -43,8 +43,8 @@ public class Runs {
         } else {
             StringBuilder filter = new StringBuilder();
             Set keys = filters.keySet();
-            for (Object key: keys
-                 ) {
+            for (Object key : keys
+            ) {
                 filter.append("&").append(key.toString()).append("=").append(filters.get(key));
             }
             response = (JSONArray) client.sendGet(GET_RUNS + project_id + filter, statusCode);

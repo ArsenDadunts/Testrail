@@ -1,4 +1,5 @@
 package testrail.payloads;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
@@ -15,7 +16,7 @@ public class CaseFieldPayload {
     public Object configs = null;
 
     public JSONArray generateConfigs(boolean is_global, ArrayList project_ids, boolean is_required, String default_value,
-                                     String items){
+                                     String items) {
         JSONArray array = new JSONArray();
         JSONObject context = new JSONObject();
         JSONObject options = new JSONObject();

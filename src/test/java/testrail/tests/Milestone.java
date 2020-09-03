@@ -20,8 +20,8 @@ public class Milestone {
     MilestonePayload payload = new MilestonePayload();
 
     @BeforeClass
-    public void setup(){
-        JSONArray array = projects.get_projects_with_filters(OK,0);
+    public void setup() {
+        JSONArray array = projects.get_projects_with_filters(OK, 0);
         JSONObject project = (JSONObject) array.get(0);
         project_id = project.get("id").toString();
     }
@@ -38,7 +38,7 @@ public class Milestone {
     }
 
     @Test
-    public void update_milestone(){
+    public void update_milestone() {
         JSONObject res = milestones.add_milestone(project_id, payload, OK);
         String milestone_id = res.get("id").toString();
         JSONObject response = milestones.update_milestone(milestone_id, payload.updateMilestone(true, true), OK);
@@ -52,14 +52,14 @@ public class Milestone {
     }
 
     @Test
-    public void delete_milestone(){
+    public void delete_milestone() {
         JSONObject res = milestones.add_milestone(project_id, payload, OK);
         String milestone_id = res.get("id").toString();
         milestones.delete_milestone(milestone_id, OK);
     }
 
     @Test
-    public void get_milestone(){
+    public void get_milestone() {
         JSONObject res = milestones.add_milestone(project_id, payload, OK);
         String milestone_id = res.get("id").toString();
         JSONObject response = milestones.get_milestone(milestone_id, OK);
@@ -73,7 +73,7 @@ public class Milestone {
     }
 
     @Test
-    public void get_milestones(){
+    public void get_milestones() {
         HashMap<String, Integer> filters = new HashMap<>();
         filters.put("is_completed", 0);
         filters.put("is_started", 0);

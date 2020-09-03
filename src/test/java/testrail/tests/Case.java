@@ -5,13 +5,14 @@ import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import testrail.common.Constants;
 import testrail.executors.*;
 import testrail.payloads.CasePayload;
 
+import static testrail.common.Constants.OK;
+
 
 public class Case {
-    String project_id, section_id;
+    String project_id, suite_id, section_id;
     Projects project;
     Sections section;
     Cases cases = new Cases();
@@ -25,6 +26,7 @@ public class Case {
         JSONArray projects = project.get_projects_with_filters(200, 0);
         JSONObject project = (JSONObject) projects.get(0);
         project_id = project.get("id").toString();
+        suite_id = project.get("suite_mode").toString();
         //get sections
         JSONArray res = section.get_sections(project_id, 200);
         JSONObject section = (JSONObject) res.get(0);
@@ -34,7 +36,7 @@ public class Case {
     @Test
     public void add_case() {
         //create case
-        JSONObject response = cases.add_case(section_id, payload, Constants.OK);
+        JSONObject response = cases.add_case(section_id, payload, OK);
         Assert.assertNotNull(response.get("id"));
         Assert.assertEquals(response.get("title"), payload.title);
         Assert.assertEquals(response.get("section_id").toString(), section_id);
@@ -56,11 +58,11 @@ public class Case {
     @Test
     public void update_case() {
         //create case
-        JSONObject response = cases.add_case(section_id, payload, Constants.OK);
+        JSONObject response = cases.add_case(section_id, payload, OK);
         Assert.assertNotNull(response.get("id"));
         String case_id = response.get("id").toString();
         //update case
-        JSONObject res = cases.update_case(case_id, payload.updateCase(2, "5m"), Constants.OK);
+        JSONObject res = cases.update_case(case_id, payload.updateCase(2, "5m"), OK);
         Assert.assertEquals(res.get("id").toString(), case_id);
         Assert.assertNotNull(res.get("title"));
         Assert.assertEquals(res.get("section_id").toString(), section_id);
@@ -82,22 +84,22 @@ public class Case {
     @Test
     public void delete_case() {
         //create case
-        JSONObject response = cases.add_case(section_id, payload, Constants.OK);
+        JSONObject response = cases.add_case(section_id, payload, OK);
         Assert.assertNotNull(response.get("id"));
         String case_id = response.get("id").toString();
         //delete case
-        cases.delete_case(case_id, Constants.OK);
+        cases.delete_case(case_id, OK);
 
     }
 
     @Test
-    public void get_case(){
+    public void get_case() {
         //create case
-        JSONObject response = cases.add_case(section_id, payload, Constants.OK);
+        JSONObject response = cases.add_case(section_id, payload, OK);
         Assert.assertNotNull(response.get("id"));
         String case_id = response.get("id").toString();
         //get case
-        JSONObject res = cases.get_case(case_id, Constants.OK);
+        JSONObject res = cases.get_case(case_id, OK);
         Assert.assertEquals(res.get("id").toString(), case_id);
         Assert.assertNotNull(res.get("title"));
         Assert.assertEquals(res.get("section_id").toString(), section_id);
@@ -120,7 +122,7 @@ public class Case {
     @Test
     public void get_cases() {
         //get cases
-        JSONArray response = cases.get_cases(project_id, Constants.OK);
+        JSONArray response = cases.get_cases(project_id, suite_id, OK);
         for (Object object : response) {
             JSONObject res = (JSONObject) object;
             Assert.assertNotNull(res.get("id"));

@@ -23,6 +23,7 @@ public class Project {
         Assert.assertEquals(response.get("show_announcement"), payload.show_announcement);
         Assert.assertNotNull(response.get("url"));
     }
+
     @Test
     public void update_project() {
         JSONObject response = projects.add_project(payload, Constants.OK);
@@ -41,7 +42,7 @@ public class Project {
     }
 
     @Test
-    public void delete_project(){
+    public void delete_project() {
         JSONObject response = projects.add_project(payload, Constants.OK);
         Assert.assertEquals(response.get("announcement"), payload.announcement);
         Assert.assertNotNull(response.get("id"));
@@ -52,7 +53,7 @@ public class Project {
     }
 
     @Test
-    public void get_project(){
+    public void get_project() {
         JSONObject response = projects.add_project(payload, Constants.OK);
         Assert.assertNotNull(response.get("id"));
         String project_id = response.get("id").toString();
@@ -67,7 +68,7 @@ public class Project {
     }
 
     @Test
-    public void get_projects_without_filters(){
+    public void get_projects_without_filters() {
         JSONArray res = projects.get_projects_without_filters(Constants.OK);
         for (Object re : res) {
             JSONObject object = (JSONObject) re;
@@ -81,7 +82,7 @@ public class Project {
     }
 
     @Test
-    public void get_projects_with_filters(){
+    public void get_projects_with_filters() {
         JSONArray res = projects.get_projects_with_filters(Constants.OK, 0);
         for (Object re : res) {
             JSONObject object = (JSONObject) re;

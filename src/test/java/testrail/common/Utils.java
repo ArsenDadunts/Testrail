@@ -42,7 +42,7 @@ public class Utils {
     }
 
     public static String generateString() {
-        return ""+new Random().nextInt(999999999);
+        return "" + new Random().nextInt(999999999);
     }
 
     public static int generateRandomInt() {

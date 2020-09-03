@@ -30,7 +30,7 @@ public class ResultPayload extends JSONObject {
         return map;
     }
 
-    public Map addResults(String file){
+    public Map addResults(String file) {
         Map<String, Object> map = null;
         try {
             map = mapper.readValue(new File(file), new TypeReference<Map<String, Object>>() {

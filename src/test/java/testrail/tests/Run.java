@@ -23,15 +23,16 @@ public class Run {
     RunPayload payload = new RunPayload();
 
     @BeforeClass
-    public void setup(){
+    public void setup() {
         //get project
         project = new Projects();
-        JSONArray projects = project.get_projects_with_filters(OK,0);
+        JSONArray projects = project.get_projects_with_filters(OK, 0);
         JSONObject project = (JSONObject) projects.get(0);
         project_id = project.get("id").toString();
+        String suite_id = project.get("suite_mode").toString();
         //get cases
         get_case = new Cases();
-        JSONArray cases = get_case.get_cases(project_id, OK);
+        JSONArray cases = get_case.get_cases(project_id, suite_id, OK);
         for (Object object : cases) {
             JSONObject res = (JSONObject) object;
             caseIds.add(res.get("id"));
@@ -40,9 +41,9 @@ public class Run {
     }
 
     @Test
-    public void add_run(){
+    public void add_run() {
         //add run
-        JSONObject response = runs.add_run(project_id, payload,OK);
+        JSONObject response = runs.add_run(project_id, payload, OK);
         Assert.assertNotNull(response.get("id"));
         Assert.assertEquals(response.get("assignedto_id").toString(), String.valueOf(payload.assignedto_id));
         Assert.assertNotNull(response.get("blocked_count"));
@@ -60,15 +61,15 @@ public class Run {
     }
 
     @Test
-    public void update_run(){
+    public void update_run() {
         //add run
-        JSONObject res = runs.add_run(project_id, payload,OK);
+        JSONObject res = runs.add_run(project_id, payload, OK);
         Assert.assertNotNull(res.get("id"));
         String run_id = res.get("id").toString();
         //get run
-        payload.include_all =true;
+        payload.include_all = true;
         payload.case_ids = null;
-        payload.description = "Updated Run description "+run_id;
+        payload.description = "Updated Run description " + run_id;
         JSONObject response = runs.update_run(run_id, payload, OK);
         Assert.assertEquals(res.get("id").toString(), run_id);
         Assert.assertEquals(response.get("assignedto_id").toString(), String.valueOf(payload.assignedto_id));
@@ -87,9 +88,9 @@ public class Run {
     }
 
     @Test
-    public void get_run(){
+    public void get_run() {
         //add run
-        JSONObject res = runs.add_run(project_id, payload,OK);
+        JSONObject res = runs.add_run(project_id, payload, OK);
         Assert.assertNotNull(res.get("id"));
         String run_id = res.get("id").toString();
         //get run
@@ -111,9 +112,9 @@ public class Run {
     }
 
     @Test
-    public void close_run(){
+    public void close_run() {
         //add run
-        JSONObject res = runs.add_run(project_id, payload,OK);
+        JSONObject res = runs.add_run(project_id, payload, OK);
         Assert.assertNotNull(res.get("id"));
         String run_id = res.get("id").toString();
         //close run
@@ -135,9 +136,9 @@ public class Run {
     }
 
     @Test
-    public void delete_run(){
+    public void delete_run() {
         //add run
-        JSONObject res = runs.add_run(project_id, payload,OK);
+        JSONObject res = runs.add_run(project_id, payload, OK);
         Assert.assertNotNull(res.get("id"));
         String run_id = res.get("id").toString();
         //delete run
@@ -145,11 +146,11 @@ public class Run {
     }
 
     @Test
-    public void get_runs(){
+    public void get_runs() {
         //get runs
         HashMap<String, String> filters = new HashMap<>();
         filters.put("created_by", CREATED_BY_ID);
-        JSONArray res = runs.get_runs(project_id,filters, OK);
+        JSONArray res = runs.get_runs(project_id, filters, OK);
         for (Object re : res) {
             JSONObject response = (JSONObject) re;
             Assert.assertNotNull(response.get("assignedto_id"));

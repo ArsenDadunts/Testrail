@@ -1,5 +1,5 @@
 # Testrail API
-This repository contains bindings on how to access TestRail's API (v2). 
+This repository contains bindings on how to access [TestRail's API (v2)](http://docs.gurock.com/testrail-api2/start). 
 
 ## project_structure
 
@@ -19,7 +19,6 @@ This repository contains bindings on how to access TestRail's API (v2).
             │           ├── exceptions
             │           │   └── APIException.java
             │           ├── executors
-            │           │   ├── Attachments.java
             │           │   ├── Case_Fields.java
             │           │   ├── Case_Types.java
             │           │   ├── Cases.java

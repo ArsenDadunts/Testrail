@@ -37,7 +37,7 @@ public class Projects {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        String filter = "&is_completed="+is_completed;
+        String filter = "&is_completed=" + is_completed;
         return (JSONArray) client.sendGet(GET_PROJECTS + filter, statusCode);
     }
 

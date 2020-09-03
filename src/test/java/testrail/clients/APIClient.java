@@ -63,9 +63,7 @@ public class APIClient {
         JSONObject response = null;
         try {
             response = (JSONObject) this.sendRequest("GET", uri, data, statusCode);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
+        } catch (IOException | APIException e) {
             e.printStackTrace();
         }
         return response;
@@ -75,9 +73,7 @@ public class APIClient {
         Object response = null;
         try {
             response = this.sendRequest("GET", uri, null, statusCode);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
+        } catch (IOException | APIException e) {
             e.printStackTrace();
         }
         return response;
@@ -87,9 +83,7 @@ public class APIClient {
         JSONObject response = null;
         try {
             response = (JSONObject) this.sendRequest("POST", uri, data, statusCode);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (APIException e) {
+        } catch (IOException | APIException e) {
             e.printStackTrace();
         }
         return response;
@@ -99,22 +93,23 @@ public class APIClient {
             throws MalformedURLException, IOException, APIException {
         if (method.equals("POST")) {
             if (data != null) {
-                if (url.startsWith("add_attachment"))   // add_attachment API requests
-                {
-                    RequestSpecBuilder specBuilder = new RequestSpecBuilder();
-                    String boundary = "TestRailAPIAttachmentBoundary"; //Can be any random string
-                    File uploadFile = new File((String) data);
-                    response = given().log().method().log().uri().log().headers().log().body()
-                            .header("Authorization", "Basic " + getAuthorization(this.m_user, this.m_password))
-                            .header("Content-Type", "multipart/form-data; boundary=" + boundary)
-                            .spec(specBuilder.build())
-                            .multiPart(uploadFile)
-                            .post(this.m_url + url);
-                    System.out.println("Response:");
-                    response.prettyPrint();
-                    assertEquals(response.statusCode(), statusCode);
-                    return convertToObject(response);
-                } else {
+                //TODO
+//                if (url.startsWith("add_attachment"))   // add_attachment API requests
+//                {
+//                    RequestSpecBuilder specBuilder = new RequestSpecBuilder();
+//                    String boundary = "TestRailAPIAttachmentBoundary"; //Can be any random string
+//                    File uploadFile = new File((String) data);
+//                    response = given().log().method().log().uri().log().headers().log().body()
+//                            .header("Authorization", "Basic " + getAuthorization(this.m_user, this.m_password))
+//                            .header("Content-Type", "multipart/form-data; boundary=" + boundary)
+//                            .spec(specBuilder.build())
+//                            .multiPart(uploadFile)
+//                            .post(this.m_url + url);
+//                    System.out.println("Response:");
+//                    response.prettyPrint();
+//                    assertEquals(response.statusCode(), statusCode);
+//                    return convertToObject(response);
+//                } else {
                     Object res = new Gson().toJson(data);
                     response = given().log().method().log().uri().log().headers().log().body()
                             .header("Authorization", "Basic " + getAuthorization(this.m_user, this.m_password))
@@ -125,7 +120,7 @@ public class APIClient {
                     response.prettyPrint();
                     assertEquals(response.statusCode(), statusCode);
                     return convertToObject(response);
-                }
+//                }
             } else {
                 response = given().log().method().log().uri().log().headers().log().body()
                         .header("Authorization", "Basic " + getAuthorization(this.m_user, this.m_password))
@@ -145,9 +140,9 @@ public class APIClient {
             System.out.println("Response:");
             response.prettyPrint();
             assertEquals(response.statusCode(), statusCode);
-            if (response.body().asString().startsWith("[")){
+            if (response.body().asString().startsWith("[")) {
                 return convertToArray(response);
-            }else {
+            } else {
                 return convertToObject(response);
             }
         }

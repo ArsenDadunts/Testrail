@@ -20,8 +20,8 @@ public class Section {
     SectionPayload payload = new SectionPayload();
 
     @BeforeClass
-    public void setup(){
-        project= new Projects();
+    public void setup() {
+        project = new Projects();
         JSONArray projects = project.get_projects_with_filters(OK, 0);
         JSONObject project = (JSONObject) projects.get(0);
         project_id = project.get("id").toString();
@@ -29,7 +29,7 @@ public class Section {
     }
 
     @Test
-    public void add_section(){
+    public void add_section() {
         payload.suite_id = suite_id;
         JSONObject response = sections.add_section(project_id, payload, OK);
         Assert.assertNotNull(response.get("id"));
@@ -42,7 +42,7 @@ public class Section {
     }
 
     @Test
-    public void update_section(){
+    public void update_section() {
         payload.suite_id = suite_id;
         JSONObject response = sections.add_section(project_id, payload, OK);
         Assert.assertNotNull(response.get("id"));
@@ -58,7 +58,7 @@ public class Section {
     }
 
     @Test
-    public void delete_section(){
+    public void delete_section() {
         payload.suite_id = suite_id;
         JSONObject response = sections.add_section(project_id, payload, OK);
         Assert.assertNotNull(response.get("id"));
@@ -67,8 +67,8 @@ public class Section {
     }
 
     @Test
-    public void get_sections(){
-       JSONArray res = sections.get_sections(project_id, OK);
+    public void get_sections() {
+        JSONArray res = sections.get_sections(project_id, OK);
         for (Object re : res) {
             JSONObject object = (JSONObject) re;
             Assert.assertNotNull(object.get("id"));

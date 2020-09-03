@@ -15,7 +15,7 @@ import java.util.HashMap;
 import static testrail.common.Constants.*;
 
 public class Result {
-    String project_id, run_id, case_id;
+    String project_id, suite_id, run_id, case_id;
     Projects project = new Projects();
     Runs run = new Runs();
     Cases cases = new Cases();
@@ -29,6 +29,7 @@ public class Result {
         JSONArray res1 = project.get_projects_with_filters(OK, 0);
         JSONObject project = (JSONObject) res1.get(0);
         project_id = project.get("id").toString();
+        suite_id = project.get("suite_mode").toString();
         //get run
         HashMap<String, Integer> filters = new HashMap<>();
         filters.put("is_completed", 0);
@@ -40,7 +41,7 @@ public class Result {
     @Test
     public void get_results_for_case() {
         //get cases
-        JSONArray res3 = cases.get_cases(project_id, OK);
+        JSONArray res3 = cases.get_cases(project_id, suite_id, OK);
         JSONObject case1 = (JSONObject) res3.get(0);
         case_id = case1.get("id").toString();
         //get_results_for_case
@@ -99,7 +100,7 @@ public class Result {
     @Test
     public void add_result_for_case() {
         //get case
-        JSONArray res3 = cases.get_cases(project_id, OK);
+        JSONArray res3 = cases.get_cases(project_id, suite_id, OK);
         JSONObject case1 = (JSONObject) res3.get(0);
         case_id = case1.get("id").toString();
         // add result for testrail.tests

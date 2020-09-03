@@ -16,8 +16,9 @@ public class Case_Field {
     String project_id;
     Case_Fields case_fields = new Case_Fields();
     CaseFieldPayload payload = new CaseFieldPayload();
+
     @BeforeClass
-    public void setup(){
+    public void setup() {
         //get project
         Projects project = new Projects();
         JSONArray array = project.get_projects_with_filters(OK, 0);
@@ -39,7 +40,7 @@ public class Case_Field {
     public void add_case_field() {
         ArrayList<String> projectIds = new ArrayList<>();
         projectIds.add(project_id);
-        payload.configs = payload.generateConfigs(true, projectIds,false, "1",
+        payload.configs = payload.generateConfigs(true, projectIds, false, "1",
                 "1, First\n2, Second");
         JSONObject response = case_fields.add_case_field(payload, OK);
         Assert.assertNotNull(response.get("id"));

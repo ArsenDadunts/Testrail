@@ -30,8 +30,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ded75cab-c7ea-495a-bdc5-fcd4588ad141" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/APIException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/exceptions/APIException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testrail/depracted_ToDo/Attachment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testrail/depracted_ToDo/Attachments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testrail/clients/APIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/clients/APIClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/clients/APIClientCopy2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/depracted_ToDo/APIClientCopy2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/common/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/common/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Attachments.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Cases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Cases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Projects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Projects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Results.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Results.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/executors/Runs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/executors/Runs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/CaseFieldPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/CaseFieldPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/MilestonePayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/MilestonePayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/ResultPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/ResultPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/SectionPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/SectionPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/payloads/SuitePayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/payloads/SuitePayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/tests/Attachment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/tests/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Case.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/tests/Case_Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Case_Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/tests/Milestone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Milestone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/tests/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/tests/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/tests/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/tests/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Section.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrail/tests/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrail/tests/Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +89,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
+  </component>
   <component name="ProjectId" id="1gMVBm1y5sPRElJsVIaUsB3tDdg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -75,7 +102,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Documents/groups-api-test" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/groups-api-test" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.24827586" />
@@ -85,9 +112,12 @@
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="testrail.common.Constants" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/resources" />
-      <recent name="$PROJECT_DIR$/src/test/java/testrail" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/testrail/depracted_to-do" />
+      <recent name="$PROJECT_DIR$/src/test/java/testrail/clients" />
+      <recent name="$PROJECT_DIR$/src/test" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="tests" />
@@ -95,15 +125,12 @@
       <recent name="testrail" />
       <recent name="testrail.payloads" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/handlers" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test/java/testrail" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Attachment.add_attachment_to_result">
+  <component name="RunManager" selected="TestNG.Attachment.add_attachment_to_run">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Testrail-API" />
       <option name="VM_PARAMETERS" />
@@ -151,6 +178,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Attachment.add_attachment_to_result (1)" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="Testrail" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testrail.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testrail.tests" />
+      <option name="MAIN_CLASS_NAME" value="testrail.tests.Attachment" />
+      <option name="METHOD_NAME" value="add_attachment_to_result" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Attachment.add_attachment_to_result" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
       <module name="Testrail-API" />
       <extension name="coverage">
@@ -163,6 +216,32 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="testrail.tests.Attachment" />
       <option name="METHOD_NAME" value="add_attachment_to_result" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Attachment.add_attachment_to_run" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="Testrail" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testrail.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testrail.tests" />
+      <option name="MAIN_CLASS_NAME" value="testrail.tests.Attachment" />
+      <option name="METHOD_NAME" value="add_attachment_to_run" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -203,8 +282,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Case_Field.get_case_fields" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
-      <module name="Testrail-API" />
+    <configuration name="Run.add_run" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
+      <module name="Testrail" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="testrail.tests.*" />
@@ -212,61 +291,9 @@
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="testrail.tests.Case_Field" />
-      <option name="METHOD_NAME" value="get_case_fields" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Report.add_report" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
-      <module name="Testrail-API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testrail.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="testrail.tests.Report" />
-      <option name="METHOD_NAME" value="add_report" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Report.get_reports" type="TestNG" singleton="false" temporary="true" nameIsGenerated="true">
-      <module name="Testrail-API" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testrail.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="testrail.tests.Report" />
-      <option name="METHOD_NAME" value="get_reports" />
+      <option name="PACKAGE_NAME" value="testrail.tests" />
+      <option name="MAIN_CLASS_NAME" value="testrail.tests.Run" />
+      <option name="METHOD_NAME" value="add_run" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -300,11 +327,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Attachment.add_attachment_to_run" />
+        <item itemvalue="TestNG.Attachment.add_attachment_to_result (1)" />
+        <item itemvalue="TestNG.Run.add_run" />
         <item itemvalue="TestNG.Attachment.add_attachment_to_result" />
         <item itemvalue="TestNG.Case_Field.add_case_field" />
-        <item itemvalue="TestNG.Case_Field.get_case_fields" />
-        <item itemvalue="TestNG.Report.get_reports" />
-        <item itemvalue="TestNG.Report.add_report" />
       </list>
     </recent_temporary>
   </component>
@@ -392,22 +419,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1599054081904" />
-    <state width="1874" height="278" key="GridCell.Tab.0.bottom" timestamp="1599049791717">
+    <state width="1874" height="199" key="GridCell.Tab.0.bottom" timestamp="1599117162674">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1599049791717" />
-    <state width="1874" height="278" key="GridCell.Tab.0.center" timestamp="1599049791716">
+    <state width="1874" height="199" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1599117162674" />
+    <state width="1874" height="199" key="GridCell.Tab.0.center" timestamp="1599117162673">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1599049791716" />
-    <state width="1874" height="278" key="GridCell.Tab.0.left" timestamp="1599049791716">
+    <state width="1874" height="199" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1599117162673" />
+    <state width="1874" height="199" key="GridCell.Tab.0.left" timestamp="1599117162672">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1599049791716" />
-    <state width="1874" height="278" key="GridCell.Tab.0.right" timestamp="1599049791716">
+    <state width="1874" height="199" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1599117162672" />
+    <state width="1874" height="199" key="GridCell.Tab.0.right" timestamp="1599117162673">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1599049791716" />
+    <state width="1874" height="199" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1599117162673" />
     <state x="429" y="188" width="1024" height="852" key="SettingsEditor" timestamp="1599052197493">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

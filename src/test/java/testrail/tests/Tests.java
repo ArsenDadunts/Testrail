@@ -32,7 +32,7 @@ public class Tests {
     }
 
     @Test
-    public void get_test(){
+    public void get_test() {
         JSONObject response = tests.get_test(Constants.EXAMPLE_TEST_ID, Constants.OK);
         Assert.assertEquals(response.get("id").toString(), Constants.EXAMPLE_TEST_ID);
         Assert.assertNotNull(response.get("case_id"));

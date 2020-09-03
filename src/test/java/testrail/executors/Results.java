@@ -103,7 +103,7 @@ public class Results {
         return (JSONObject) client.sendPost(ADD_RESULT_FOR_CASE + run_id + "/" + case_id, data, statusCode);
     }
 
-    public JSONArray add_results(String run_id, Object data,  int statusCode) {
+    public JSONArray add_results(String run_id, Object data, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);

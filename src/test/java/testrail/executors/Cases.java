@@ -27,11 +27,11 @@ public class Cases {
         return response;
     }
 
-    public JSONArray get_cases(String project_id, int statusCode) {
+    public JSONArray get_cases(String project_id, String suite_id, int statusCode) {
         client = new APIClient(BASE_URL);
         client.setUser(TESTRAIL_USERNAME);
         client.setPassword(TESTRAIL_PASSWORD);
-        return (JSONArray) client.sendGet(GET_CASES + project_id, statusCode);
+        return (JSONArray) client.sendGet(GET_CASES + project_id + "&suite_id=" + suite_id, statusCode);
     }
 
     public JSONObject add_case(String section_id, Object data, int statusCode) {
